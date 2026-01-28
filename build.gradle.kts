@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "2.2.20"
+    application
 }
 
 group = "org.nwtls"
@@ -12,12 +13,23 @@ repositories {
 dependencies {
     testImplementation(kotlin("test"))
 
-    implementation(libs.snake.yaml)
+    implementation(project(":config-lib"))
 }
 
 tasks.test {
     useJUnitPlatform()
 }
+
 kotlin {
     jvmToolchain(24)
+}
+
+application {
+    mainClass.set("org.nwtls.app.MainKt")
+}
+
+sourceSets {
+    main {
+        kotlin.srcDir("app/src/main/kotlin")
+    }
 }

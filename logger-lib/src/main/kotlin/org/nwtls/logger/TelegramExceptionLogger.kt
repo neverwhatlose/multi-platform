@@ -1,4 +1,4 @@
-package org.neverwhatlose.telegram
+package org.nwtls.logger
 
 class TelegramExceptionLogger {
 

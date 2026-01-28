@@ -8,6 +8,7 @@ import java.nio.file.Files
 import java.nio.file.StandardCopyOption
 import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.locks.ReentrantReadWriteLock
+import kotlin.collections.get
 import kotlin.concurrent.read
 
 // todo: convert ConfigManager from singleton to instantiable class to each instance per config file
