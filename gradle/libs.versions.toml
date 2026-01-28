@@ -1,0 +1,5 @@
+[versions]
+
+[libraries]
+#Source: https://mvnrepository.com/artifact/org.yaml/snakeyaml
+snake-yaml = { module = "org.yaml:snakeyaml", version = "2.5" }

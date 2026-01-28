@@ -12,8 +12,7 @@ repositories {
 dependencies {
     testImplementation(kotlin("test"))
 
-    // Source: https://mvnrepository.com/artifact/org.yaml/snakeyaml
-    implementation("org.yaml:snakeyaml:2.5")
+    implementation(libs.snake.yaml)
 }
 
 tasks.test {
