@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "2.2.20"
+    kotlin("jvm")
 }
 
 group = "org.nwtls"
@@ -11,13 +11,12 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+}
 
-    implementation(libs.snake.yaml)
+kotlin {
+    jvmToolchain(24)
 }
 
 tasks.test {
     useJUnitPlatform()
-}
-kotlin {
-    jvmToolchain(24)
 }
